@@ -1,0 +1,23 @@
+# Base Python
+FROM python:3.11-slim
+
+# Establecer carpeta de trabajo
+WORKDIR /app
+
+# Instalar pipenv
+RUN pip install --no-cache-dir pipenv
+
+# Copiar Pipfile y Pipfile.lock desde la raíz del proyecto
+COPY Pipfile Pipfile.lock ./
+
+# Instalar dependencias globales en el contenedor
+RUN pipenv install --system --deploy
+
+# Copiar solo el código de stock_service
+COPY stock_service/ ./stock_service/
+
+# PYTHONPATH para que Python encuentre stock_service
+ENV PYTHONPATH=/app/stockservice/stock_service
+
+# Comando por defecto para levantar el listener
+CMD ["python", "stockservice/manage.py", "run_rabbit_listener"]
