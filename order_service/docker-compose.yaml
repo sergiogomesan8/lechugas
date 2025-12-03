@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+
+  order_bd:
+    image: postgres:16
+    container_name: order_database
+    env_file: .env
+    ports:
+      - "5434:5432"
+    volumes:
+      - order_data:/var/lib/postgresql/data
+    networks:
+      - lechugas
+
+networks:
+  lechugas:
+    external: true
+
+volumes:
+  order_data:
