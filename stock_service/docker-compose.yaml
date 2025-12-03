@@ -6,6 +6,10 @@ services:
     image: postgres:16
     container_name: stock_database
     env_file: .env
+    environment:
+      POSTGRES_DB: ${STOCK_DB_NAME}
+      POSTGRES_USER: ${STOCK_DB_USER}
+      POSTGRES_PASSWORD: ${STOCK_DB_PASSWORD}
     ports:
       - "5433:5432"
     volumes:
