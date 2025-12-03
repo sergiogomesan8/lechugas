@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"   # puerto para productores/consumidores
+      - "15672:15672" # UI de management
+    environment:
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+    networks:
+      - lechugas
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
+    ports:
+      - '80:80'
+    volumes:
+      - ./docker-data/pgadmin_data:/var/lib/pgadmin
+    networks:
+      - lechugas
+
+networks:
+  lechugas:
+    external: true
