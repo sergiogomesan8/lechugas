@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+
+  stock_bd:
+    image: postgres:16
+    container_name: stock_database
+    env_file: .env
+    ports:
+      - "5433:5432"
+    volumes:
+      - stock_data:/var/lib/postgresql/data
+    networks:
+      - lechugas
+
+  # stock_listener:
+  #   build:
+  #     context: ../  # raíz del proyecto lechugas
+  #     dockerfile: stock_service/Dockerfile.stock
+  #   env_file:
+  #     - stock_service/.env
+  #   networks:
+  #     - lechugas
+
+networks:
+  lechugas:
+    external: true
+
+volumes:
+  stock_data:
