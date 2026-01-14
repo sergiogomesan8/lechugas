@@ -1,6 +1,6 @@
 # Proyecto Lechugas 🥬
 
-![Lechugas](https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif)
+![Lechugas](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmk4c3U5ODVwMzNlZ2pjaTRlNWZpZ2l0bXcxZXFmMTk4bm92aXplMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dd2wy16j3pwOpaE4XG/giphy.gif)
 
 ## Descripción
 
