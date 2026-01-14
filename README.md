@@ -22,10 +22,11 @@ Se pueden experimentar diferentes estrategias de manejo de stock y persistencia:
 
 ## Objetivos
 
-- Explorar conceptos de **DDD** y **arquitectura hexagonal** en un ejemplo divertido y realista.  
-- Practicar **event-driven architecture** con RabbitMQ.  
-- Implementar patrones de gestión de stock y estrategias de persistencia.  
-- Aprender sobre sincronización y consistencia en sistemas distribuidos… todo con lechugas 😄.  
+El objetivo principal del proyecto es **aprender y consolidar conceptos de Event-Driven, DDD y arquitectura hexagonal con Python**, además de experimentar con estrategias de persistencia.  
+
+- [ ] Implementar **event-driven architecture** con RabbitMQ  
+- [ ] Consolidar **arquitectura hexagonal** y **DDD** en Python  
+- [ ] Experimentar con **patrones/estrategias de persistencia** (pesimista, optimista, versionado)  
 
 ---
 
