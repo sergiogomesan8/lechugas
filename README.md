@@ -33,16 +33,7 @@ Se pueden experimentar diferentes estrategias de manejo de stock y persistencia:
 
 - **Python**  
 - **RabbitMQ**  
-- Base de datos relacional o NoSQL (según la estrategia probada)  
+- **PostgreSQL**
 - Arquitectura hexagonal  
 - Domain-Driven Design (DDD)  
 
----
-
-## Cómo usarlo
-
-1. Clonar el repositorio:
-
-```bash
-git clone https://github.com/tu-usuario/proyecto-lechugas.git
-cd proyecto-lechugas
