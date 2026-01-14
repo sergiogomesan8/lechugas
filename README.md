@@ -11,21 +11,16 @@ Aquí llevamos la gestión de lechugas al siguiente nivel usando **Python**, **a
 El proyecto está compuesto por **dos servicios principales**:  
 
 - **Order Service**: maneja la venta de productos.  
-- **Stock Service**: lleva la cuenta de las lechugas y actualiza el inventario.  
-
-Se pueden experimentar diferentes estrategias de manejo de stock y persistencia:  
-- Actualizaciones **pesimistas** vs **optimistas**.  
-- Versionado de stock y control de concurrencia.  
-- Persistencia en base de datos para garantizar consistencia y eficiencia.  
-
+- **Stock Service**: lleva la cuenta de las lechugas y actualiza el inventario.
+- 
 ---
 
 ## Objetivos
 
 El objetivo principal del proyecto es **aprender y consolidar conceptos de Event-Driven, DDD y arquitectura hexagonal con Python**, además de experimentar con estrategias de persistencia.  
 
-- [ ] Implementar **event-driven architecture** con RabbitMQ  
-- [ ] Consolidar **arquitectura hexagonal** y **DDD** en Python  
+- [x] Implementar **event-driven architecture** con RabbitMQ  
+- [x] Consolidar **arquitectura hexagonal** y **DDD** en Python  
 - [ ] Experimentar con **patrones/estrategias de persistencia** (pesimista, optimista, versionado)  
 
 ---
